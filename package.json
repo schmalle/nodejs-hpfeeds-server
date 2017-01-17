@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-hpfeeds",
+  "version": "0.1.1",
+  "description": "Module to support publishing data to the hpfeeds/hpfriends system",
+  "main": "nodehp.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schmalle/nodejs-hpfeeds.git"
+  },
+  "keywords": [
+    "nodejs",
+    "hpfeeds"
+  ],
+  "author": "Markus Schmall <schmall.markus@gmail.com> (https://github.com/schmalle)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schmalle/nodejs-hpfeeds/issues"
+  },
+  "homepage": "https://github.com/schmalle/nodejs-hpfeeds",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1"
+  },
+  "dependencies": {
+
+
+  }
+}
