@@ -1,14 +1,15 @@
 {
-  "name": "nodejs-hpfeeds",
-  "version": "0.1.1",
-  "description": "Module to support publishing data to the hpfeeds/hpfriends system",
+  "name": "nodejs-hpfeeds-server",
+  "version": "0.1.0",
+  "description": "Module for creating a hpfeeds basic server",
   "main": "nodehp.js",
   "scripts": {
-    "test": "none"
+    "test": "none",
+    "start": "node start.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/schmalle/nodejs-hpfeeds.git"
+    "url": "git+https://github.com/schmalle/nodejs-hpfeeds-server.git"
   },
   "keywords": [
     "nodejs",
@@ -17,15 +18,23 @@
   "author": "Markus Schmall <schmall.markus@gmail.com> (https://github.com/schmalle)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/schmalle/nodejs-hpfeeds/issues"
+    "url": "https://github.com/schmalle/nodejs-hpfeeds-server/issues"
   },
-  "homepage": "https://github.com/schmalle/nodejs-hpfeeds",
+  "homepage": "https://github.com/schmalle/nodejs-hpfeeds-server-server",
   "devDependencies": {
     "chai": "^1.9.1",
     "mocha": "^1.20.1"
   },
   "dependencies": {
-
-
+    "binary": "^0.3.0",
+    "crypto": "0.0.3",
+    "fs": "0.0.1-security",
+    "hexdump-nodejs": "^0.1.0",
+    "net": "^1.0.2",
+    "put": "0.0.6",
+    "redis": "^2.6.5"
+  },
+  "directories": {
+    "test": "test"
   }
 }
