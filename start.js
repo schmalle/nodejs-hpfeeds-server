@@ -3,4 +3,9 @@
 //
 
 var myHpFeedsServer = require ("./server");
-myHpFeedsServer.startServer(10000, true, true, true) // port 10000 useEWS = true verbose = false useredis = true
+
+// listen on port 10000
+// use EWS parser (early warning system DTAG)
+// verbosity = true
+// useredis database backend
+myHpFeedsServer.startServer(10000, true, true, true)
