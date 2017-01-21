@@ -2,7 +2,6 @@
  * Created by flake on 08/01/2017.
  */
 
-// npm install libxmljs
 
 // var libxmljs = require("libxmljs");
 var libxmljs = require("/Users/flake/source/3rdparty/libxmljs/build/Release/xmljs.node")
@@ -114,14 +113,42 @@ function parseXML(data, useredis, verbose) {
 
 }
 
+//
+// test function for the JSON parser, which has verbosity set to true and does not use redis
+//
 function parseJSONPre(data) {
     parseJSON(data, false, true)
 }
 
 function parseJSON(data, useredis, verbose) {
 
+
+    var array = data;
+
+    var parsedResponse = JSON.parse(data);
+    var len = parsedResponse.length;
+
+
+    var childRunner = 0;
+
+    while (childRunner <= parsedResponse.length - 1) {
+
+        var targetPort = parsedResponse[0].dest_port.toString();
+
+
+        if (verbose) console.log("Attack on port " + targetPort)
+
+        if (useredis) {
+            redis.increaseKey(helper.getDateTime() + ":" + targetPort)
+
+        }
+
+        childRunner++;
+
+    }
+
 }
 
 //var xml = readFileXML(parseXMLPre);
 
-var xml = readFileJSON(parseJSONPre);
+//var xml = readFileJSON(parseJSONPre);

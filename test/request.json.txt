@@ -1,2 +1,3 @@
-{"timestamp":"2017-01-09T16:28:02.000000","event_type":"alert","src_ip":"96.8.22.1","src_port":47292,"dest_ip":"85.1.1.1","dest_port":5902,"honeypot":{"name":"NetworkHoneypot Honeytrap v1.1","nodeid":"honeybase.ht"}}
+[{"timestamp":"2017-01-09T16:28:02.000000","event_type":"alert","src_ip":"96.8.22.1","src_port":47292,"dest_ip":"85.1.1.1","dest_port":5902,"honeypot":{"name":"NetworkHoneypot Honeytrap v1.1","nodeid":"honeybase.ht"}},
 {"timestamp":"2017-01-09T16:28:02.000000","event_type":"alert","src_ip":"96.8.21.1","src_port":36296,"dest_ip":"85.1.1.1","dest_port":5902,"honeypot":{"name":"NetworkHoneypot Honeytrap v1.1","nodeid":"honeybase.ht"}}
+]
