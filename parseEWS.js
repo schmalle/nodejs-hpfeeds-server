@@ -153,7 +153,9 @@ function parseJSON(data, useredis, verbose) {
 /*
 
 
-*/
+
 
 var xml = readFileXML(parseXMLPre);
 var json = readFileJSON(parseJSONPre);
+
+ */
