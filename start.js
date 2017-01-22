@@ -10,12 +10,4 @@ var myHpFeedsServer = require ("./server");
 // useredis database backend
 
 
-while(true) {
-
-    try {
-        myHpFeedsServer.startServer(10000, true, true, true)
-    }
-    catch (err) {
-        console.log("Caught error: " + err.stack)
-    }
-}
+myHpFeedsServer.startServer(10000, true, true, true)
