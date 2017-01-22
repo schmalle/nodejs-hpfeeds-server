@@ -3,8 +3,8 @@
  */
 
 
-// var libxmljs = require("libxmljs");
-var libxmljs = require("/Users/flake/source/3rdparty/libxmljs/build/Release/xmljs.node")
+var libxmljs = require("libxmljs");
+// var libxmljs = require("/Users/flake/source/3rdparty/libxmljs/build/Release/xmljs.node")
 var redis = require("./redis");
 var fs = require('fs');
 var helper = require("./helper");
@@ -149,6 +149,11 @@ function parseJSON(data, useredis, verbose) {
 
 }
 
-//var xml = readFileXML(parseXMLPre);
 
-//var xml = readFileJSON(parseJSONPre);
+/*
+
+
+*/
+
+var xml = readFileXML(parseXMLPre);
+var json = readFileJSON(parseJSONPre);

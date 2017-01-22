@@ -8,4 +8,14 @@ var myHpFeedsServer = require ("./server");
 // use EWS parser (early warning system DTAG)
 // verbosity = true
 // useredis database backend
-myHpFeedsServer.startServer(10000, true, true, true)
+
+
+while(true) {
+
+    try {
+        myHpFeedsServer.startServer(10000, true, true, true)
+    }
+    catch (err) {
+        console.log("Caught error: " + err.stack)
+    }
+}
