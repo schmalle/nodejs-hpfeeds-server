@@ -2,7 +2,7 @@
   "name": "nodejs-hpfeeds-server",
   "version": "0.1.0",
   "description": "Module for creating a hpfeeds basic server",
-  "main": "nodehp.js",
+  "main": "start.js",
   "scripts": {
     "test": "none",
     "start": "node start.js"
@@ -34,7 +34,8 @@
     "libxmljs": "^0.18.2",
     "net": "^1.0.2",
     "put": "0.0.6",
-    "redis": "^2.6.5"
+    "redis": "^2.6.5",
+    "string": "~3.3.3"
   },
   "directories": {
     "test": "test"

@@ -11,5 +11,4 @@ var myHpFeedsServer = require ("./server");
 // verbosity = true
 // useredis database backend
 
-
-myHpFeedsServer.startServer(10000, true, true, true)
+myHpFeedsServer.startServer(10000, true, true, false)

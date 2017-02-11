@@ -4,11 +4,6 @@
 // written by Markus Schmall
 //
 //
-// npm install string
-// npm install put
-// npm install binary
-// npm install hexdump-nodejs
-//
 //
 
 var ewsParser = require("./parseEWS");
