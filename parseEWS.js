@@ -4,8 +4,6 @@
 
 
 var libxmljs = require("libxmljs");
-// var libxmljs = require("/Users/flake/source/3rdparty/libxmljs/build/Release/xmljs.node")
-var redis = require("./redis");
 var fs = require('fs');
 var helper = require("./helper");
 
@@ -62,6 +60,7 @@ function readFileJSON(callback) {
 function parseAlert(alertNode, useredis, verbose) {
 
     var children = alertNode.childNodes();
+    var redis = require("./redis");
 
     var childRunner = 0;
 
@@ -122,6 +121,7 @@ function parseJSONPre(data) {
 
 function parseJSON(data, useredis, verbose) {
 
+    var redis = require("./redis");
 
     var array = data;
 
