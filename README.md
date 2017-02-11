@@ -3,10 +3,9 @@
 Hp Feeds (see https://github.com/rep/hpfeeds) is the transport protocol for 
 various honeypots.
 
-
 For testing:
 
-Copy the request* files to /opt and start the file parseEWS.js (see last lines)
+Copy the /test/request* files to /opt and start with start.sh
 
 Stores per hours port counter in Redis DB (optional)
 

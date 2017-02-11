@@ -1,4 +1,8 @@
-
+//
+//
+// Helper modules for NodeJS NPM HPFeeds server modules
+//
+//
 
 module.exports = {
 

@@ -1,4 +1,6 @@
-
+//
+// basic functions for redis function export
+//
 
 var redis = require("redis"),
     client = redis.createClient();
